@@ -1,4 +1,3 @@
-*.sqlite
 *.pyc
 .ropeproject/
 .env/
