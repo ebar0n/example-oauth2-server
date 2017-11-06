@@ -147,8 +147,8 @@ def client():
         client_id=gen_salt(40),
         client_secret=gen_salt(50),
         _redirect_uris=' '.join([
-            'https://accept.dev.landit.com/authorized',
-            'http://localhost:3000/authorized',
+            'https://accept.dev.landit.com/oauth/virgin-pulse/callback',
+            'http://localhost:3000/oauth/virgin-pulse/callback',
             'http://localhost:8000/authorized',
             'http://127.0.0.1:8000/authorized',
             'http://127.0.1:8000/authorized',
