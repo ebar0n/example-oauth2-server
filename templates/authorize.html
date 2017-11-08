@@ -92,7 +92,7 @@
 </head>
 <body>
   <div class='header-virgin-pulse'>
-      <p>landit</p>
+      <p>Landit</p>
   </div>
   <div class="container-virgin-pulse">
     <div class"container-items">
@@ -125,7 +125,7 @@
           <div class="svg">
             <img src="../img/check-mark-button.svg" alt="check">
           </div>
-            Your Activity on [PARTNER NAME]
+            Your Activity on BBVA
         </span>
         <span class="margin">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut nisl tristique, eleifend augue in, interdum mi. Quisque ut pretium risus, sed pretium arcu. Ut sagittis viverra lobortis. Etiam tincidunt lobortis mauris, eget bibendum dolor imperdiet ullamcorper. Cras a risus id libero consequat pretium nec nec enim. Maecenas ligula est, faucibus eleifend enim nec, malesuada congue velit.
@@ -138,12 +138,10 @@
       <input type="hidden" name="scope" value="{{ scopes|join(' ') }}">
       <input type="hidden" name="response_type" value="{{ response_type }}">
       <input type="hidden" name="redirect_uri" value="{{ redirect_uri }}">
-      {% if state %}
-        <input type="hidden" name="state" value="{{ state }}">
-      {% endif %}
-      <input type="submit" name="confirm" value="yes">
-      <input type="submit" name="confirm" value="no">
-
+      <input type="hidden" name="state" value="{{ state }}">
+      <div class="buttom-container">
+        <input class="buttom" type="submit" name="confirm" value="Accept">
+      </div>
     </form>
   </div>
 </body>

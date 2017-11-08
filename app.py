@@ -247,7 +247,7 @@ def authorize(*args, **kwargs):
         return render_template('authorize.html', **kwargs)
 
     confirm = request.form.get('confirm', 'no')
-    return confirm == 'yes'
+    return confirm == 'Accept'
 
 
 @app.route('/api/me')
